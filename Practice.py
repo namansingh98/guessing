@@ -65,14 +65,28 @@
  
 # write the value when value devide with 3 and 5 then print fizz , buzz
 
-for fizzbuzz in range(51):
-    if fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:
-        print("fizzbuzz")
-        continue
-    elif fizzbuzz % 3 == 0:
-        print("fizz")
-        continue
-    elif fizzbuzz % 5 == 0:
-        print("buzz")
-        continue
-    print(fizzbuzz)
+# for fizzbuzz in range(51):
+#     if fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:
+#         print("fizzbuzz")
+#         continue
+#     elif fizzbuzz % 3 == 0:
+#         print("fizz")
+#         continue
+#     elif fizzbuzz % 5 == 0:
+#         print("buzz")
+#         continue
+#     print(fizzbuzz)
+    
+    # recursive function
+def factorial(x):
+    """This is a recursive function
+    to find the factorial of an integer"""
+
+    if x == 1:
+        return 1
+    else:
+        return (x * factorial(x-1))
+
+
+num = 3
+print("The factorial of", num, "is", factorial(num))
